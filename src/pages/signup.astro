@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Iniciar sesión">
+    <div class="relative flex h-full w-full py-3">
+        <div class="w-full bg-black py-2">
+            <div
+                class="mx-auto flex h-full flex-col justify-center text-white xl:w-1/2"
+            >
+                <div>
+                    <p class="text-2xl">Usuario nuevo|</p>
+                    <p>Ingrasa los siguientes datos para continuar|</p>
+                </div>
+                <div class="mt-10">
+                    <form>
+                        <div>
+                            <label
+                                class="mb-2.5 block font-extrabold"
+                                for="username">Nombre de usuario</label
+                            >
+                            <input
+                                type="text"
+                                id="username"
+                                class="inline-block w-full rounded-full bg-white p-2.5 leading-none text-black placeholder-indigo-900 shadow placeholder:opacity-50"
+                                placeholder="pedrito2002"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                class="mb-2.5 block font-extrabold"
+                                for="email">Correo</label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                class="inline-block w-full rounded-full bg-white p-2.5 leading-none text-black placeholder-indigo-900 shadow placeholder:opacity-50"
+                                placeholder="mail@user.com"
+                            />
+                        </div>
+                        <div class="mt-4">
+                            <label
+                                class="mb-2.5 block font-extrabold"
+                                for="password">Contraseña</label
+                            >
+                            <input
+                                type="password"
+                                id="password"
+                                class="inline-block w-full rounded-full bg-white p-2.5 leading-none text-black placeholder-indigo-900 shadow"
+                                placeholder="******"
+                            />
+                        </div>
+                        <div class="mt-4">
+                            <label
+                                class="mb-2.5 block font-extrabold"
+                                for="passwordRev">Contraseña</label
+                            >
+                            <input
+                                type="password"
+                                id="passwordRev"
+                                class="inline-block w-full rounded-full bg-white p-2.5 leading-none text-black placeholder-indigo-900 shadow"
+                                placeholder="******"
+                            />
+                        </div>
+                        <div
+                            class="mt-4 flex w-full flex-col justify-between sm:flex-row"
+                        >
+                            <!-- Remember me -->
+                            <div>
+                                <input type="checkbox" id="remember" /><label
+                                    for="remember"
+                                    class="mx-2 text-sm">Recordar</label>
+                            </div>
+                            <!-- Forgot password -->
+                            <div>
+                                <a href="#" class="text-sm hover:text-gray-300"
+                                    >Olvidaste tu contraseña</a
+                                >
+                            </div>
+                        </div>
+                        <div class="mt-10">
+                            <button
+                                class="w-full rounded-full bg-orange-600 p-5 hover:bg-orange-800"
+                                >Iniciar sesion</button
+                            >
+                        </div>
+                        <hr class="mt-4">
+                        <div class="mt-4 text-center">
+                            <a href="/Sign-Up">
+                                <button
+                                    type="button"
+                                    class="w-22 rounded-full bg-gray-500 p-2 hover:bg-green-800"
+                                >
+                                    Crear nueva cuenta
+                                </button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="h-screen hidden bg-blue-600">
+            <img
+                src="https://images.pexels.com/photos/2523959/pexels-photo-2523959.jpeg"
+                class="h-full w-full"
+            />
+        </div>
+    </div>
+</Layout>

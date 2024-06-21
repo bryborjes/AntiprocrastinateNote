@@ -1,0 +1,40 @@
+<article
+    class="relative flex flex-col items-center justify-center w-full p-[1px] transition-all rounded-md bg-gradient-to-b from-white/20 via-transparent to-transparent hover:via-white/10 group"
+>
+    <div
+        class="bg-[#000214]/50 flex-1 group-hover:bg-[#000214]/10 w-full px-6 py-10 rounded transition"
+    >
+        <figure class="flex items-center justify-center">
+            <slot name="image" />
+        </figure>
+        <h3 class="mt-4 text-2xl font-bold text-center text-white">
+            <font style="vertical-align: inherit;">
+                <slot name="Task">
+                    Tomar agua
+                </slot>
+            </font>
+        </h3>
+        <p class="text-xl text-center text-sky-200">
+            <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">
+                    <slot name="Description">
+                        Esto es una prueba de la tarjeta de informacion de las tareas
+                    </slot>
+                </font>
+            </font>
+        </p>
+        <p class="text-xs text-center text-sky-200">
+            <font style="vertical-align: inherit; text-align: left;">
+                <slot name="TaskType">
+                    Tarea  
+                </slot>
+                -
+            </font>
+            <font style="vertical-align: inherit; text-align: left;">
+                <slot name="TaskDate">
+                    Mier. 15/01
+                </slot>
+            </font>
+        </p>
+    </div>
+</article>

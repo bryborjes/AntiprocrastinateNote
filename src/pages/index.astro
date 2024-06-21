@@ -1,0 +1,69 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Started">
+	<div class="container">
+		<article class="overflow-y-scroll" id="Legend">
+			<h1>Guia de inicio</h1>
+			<p>Hola que tal, vienvenido a nuetro sitio web.</p>
+
+			<p>
+				A continucion tienes a tu dispocicion nuestra guia de inicio de
+				nuestra aplicacion web para que la entiendas y puedas utilizarta
+				con el fin de que tengas una exelente experiencia de usuario.
+			</p>
+			<h1 id="Start">Inicio</h1>
+			<p>
+				Para poder empezar a utilizar nuestra aplicacion nesecitas crear
+				una cuenta en nuestro sitio web para asi poder guardar en
+				nuestra base de datos tus apuntes, notas y recordatorios que
+				anotes. Es de suma importancia que agreges un numero o correo de
+				recuperacion para tu cuenta.
+			</p>
+			<h1 id="Controller">Controles de interfaz</h1>
+			<p>
+				Para poder empezar a utilizar nuestra aplicacion nesecitas crear
+				una cuenta en nuestro sitio web para asi poder guardar en
+				nuestra base de datos tus apuntes, notas y recordatorios que
+				anotes. Es de suma importancia que agreges un numero o correo de
+				recuperacion para tu cuenta.
+			</p>
+		</article>
+		<aside class="overflow-y-scroll">
+			<li><a class="hover:text-orange-500" href="#Start">Inicio</a></li>
+			<li>
+				<a class="hover:text-orange-500" href="#Controller">Interfaz</a>
+			</li>
+		</aside>
+	</div>
+</Layout>
+
+<style>
+	* {
+		text-wrap: balance;
+	}
+	#Legend {
+		height: 500px;
+	}
+	article {
+		grid-column: 2;
+	}
+
+	aside {
+		grid-column: 1;
+		grid-row: 1;
+		border-right: 1px solid #999;
+		margin-top: 1rem;
+		overflow-x: visible;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		grid-gap: 20px;
+	}
+	h1 {
+		margin-top: 20px;
+	}
+</style>
